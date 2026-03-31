@@ -6,6 +6,7 @@ import Journey from "./components/journey";
 import Project from "./components/project";
 import ProjectsPage from "./components/projectsPage";
 import Skills from "./components/skills";
+import Contact from "./components/contact";
 
 function App() {
   const [hash, setHash] = useState(window.location.hash);
@@ -34,6 +35,7 @@ function App() {
       <Journey />
       <Skills />
       <Project />
+      <Contact />
     </div>
   );
 }

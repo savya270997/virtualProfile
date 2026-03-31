@@ -1082,6 +1082,227 @@ body {
   }
 }
 
+.contact-shell {
+  padding: 0 28px 40px;
+  background: var(--page-bg);
+  scroll-margin-top: 120px;
+}
+
+.contact-frame {
+  border: 4px solid var(--ink);
+  background: linear-gradient(135deg, #f8f5ef 0%, #f4efe4 100%);
+  box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--ink);
+  padding: 36px 40px 42px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+  gap: 24px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-frame::before {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  right: -50px;
+  top: -40px;
+  border-radius: 50%;
+  background: rgba(114, 214, 201, 0.18);
+}
+
+.contact-copy,
+.contact-actions {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-copy h2 {
+  margin: 0 0 14px;
+  max-width: 11ch;
+  color: var(--title);
+  font-size: clamp(2.1rem, 4.4vw, 3.5rem);
+  line-height: 0.98;
+}
+
+.contact-lead {
+  margin: 0;
+  max-width: 52ch;
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.contact-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.contact-highlights span {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 12px;
+  border: 3px solid var(--ink);
+  background: rgba(255, 253, 248, 0.9);
+  box-shadow: 3px 3px 0 var(--ink);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.contact-actions {
+  display: grid;
+  gap: 12px;
+  justify-items: start;
+}
+
+.contact-open-btn,
+.contact-submit-btn {
+  border: 4px solid var(--ink);
+  background: var(--yellow);
+  box-shadow: 5px 5px 0 var(--ink);
+  color: var(--title);
+  font: inherit;
+  font-weight: 900;
+  padding: 0.9rem 1.25rem;
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.contact-open-btn:hover,
+.contact-submit-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0 var(--ink);
+}
+
+.contact-email-link {
+  color: var(--title);
+  text-decoration: none;
+  font-weight: 800;
+  padding: 0.75rem 1rem;
+  border: 3px solid var(--ink);
+  background: rgba(255, 253, 248, 0.95);
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+.contact-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(11, 18, 32, 0.55);
+  backdrop-filter: blur(4px);
+}
+
+.contact-modal {
+  width: min(760px, 100%);
+  border: 4px solid var(--ink);
+  background: var(--paper);
+  box-shadow: 10px 10px 0 var(--ink);
+  padding: 24px;
+}
+
+.contact-modal-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.contact-modal-kicker {
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contact-modal-head h3 {
+  margin: 0;
+  color: var(--title);
+  font-size: 1.8rem;
+}
+
+.contact-close-btn {
+  width: 44px;
+  height: 44px;
+  border: 3px solid var(--ink);
+  background: #ffffff;
+  box-shadow: 3px 3px 0 var(--ink);
+  color: var(--title);
+  font: inherit;
+  font-size: 1.3rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.contact-field {
+  display: grid;
+  gap: 8px;
+}
+
+.contact-field span {
+  color: var(--title);
+  font-weight: 800;
+}
+
+.contact-field input,
+.contact-field textarea {
+  width: 100%;
+  border: 3px solid var(--ink);
+  background: #ffffff;
+  color: var(--title);
+  font: inherit;
+  padding: 0.85rem 0.95rem;
+  box-shadow: 3px 3px 0 var(--ink);
+  resize: vertical;
+}
+
+.contact-field-full,
+.contact-form-actions {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 980px) {
+  .contact-frame {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .contact-shell {
+    padding: 0 12px 24px;
+  }
+
+  .contact-frame {
+    padding: 26px 20px 28px;
+  }
+
+  .contact-copy h2 {
+    max-width: none;
+  }
+
+  .contact-modal {
+    padding: 18px;
+  }
+
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+}
+
 .journey-shell {
   padding: 0 28px 40px;
   background: radial-gradient(
