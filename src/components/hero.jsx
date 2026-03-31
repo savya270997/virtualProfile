@@ -140,7 +140,7 @@ const Hero = () => {
                   className="avatar-img"
                 />
               </div>
-              <span className="role-tag">Hyderabad • Open to Work</span>
+              <span className="role-tag">Full Stack Developer</span>
             </div>
           </motion.div>
         </div>
