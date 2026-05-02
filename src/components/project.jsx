@@ -58,14 +58,7 @@ const Project = () => {
                 </div>
                 <div className="project-meta">
                   <p className="project-meta-title">{project.title}</p>
-                  <a
-                    className="project-meta-link"
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Live
-                  </a>
+                  <span className="project-meta-link">Live</span>
                 </div>
                 <div
                   className="project-screen"

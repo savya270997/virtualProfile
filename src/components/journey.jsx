@@ -2,17 +2,33 @@ import { motion } from "framer-motion";
 
 const journeyStats = [
   { value: "6+", label: "Years in Product Engineering" },
-  { value: "2", label: "Core Roles Across Teams" },
+  { value: "3", label: "Core Roles Across Teams" },
   { value: "1", label: "Engineering Degree Journey" },
 ];
 
 const journeyItems = [
   {
     kind: "work",
-    year: "2021 - Present",
+    year: "2026 - Present",
+    title: "Software Development Engineer II • Full Stack",
+    org: "IQVIA",
+    accent: "journey-accent-sky",
+    summary:
+      "Working as a full-stack engineer with a strong focus on React, Node.js, data APIs, and scalable product features.",
+    points: [
+      "Building full-stack features across React-based interfaces and Node.js backend services.",
+      "Working with data APIs and backend integrations that support product workflows.",
+      "Designing maintainable application logic with attention to reliability, performance, and business needs.",
+      "Collaborating with teams to deliver practical engineering solutions in a healthcare technology environment.",
+    ],
+    stack: ["React", "Node.js", "Data APIs", "REST APIs", "Full Stack"],
+  },
+  {
+    kind: "work",
+    year: "2021 - 2026",
     title: "Senior Consultant • Full Stack",
     org: "Aaseya IT Services",
-    accent: "journey-accent-sky",
+    accent: "journey-accent-yellow",
     summary:
       "Contributing across frontend and backend systems with React, Next.js, Node.js, and GraphQL while keeping delivery focused on practical business outcomes.",
     points: [
@@ -28,7 +44,7 @@ const journeyItems = [
     year: "2020 - 2021",
     title: "Software Engineer",
     org: "Tiot Systems Pvt Ltd",
-    accent: "journey-accent-yellow",
+    accent: "journey-accent-ink",
     summary:
       "Built end-to-end web application features with a strong grounding in UI development, backend integration, debugging, and production support.",
     points: [
@@ -44,7 +60,7 @@ const journeyItems = [
     year: "2015 - 2019",
     title: "Bachelor of Engineering",
     org: "Bhilai Institute of Technology, Durg",
-    accent: "journey-accent-ink",
+    accent: "journey-accent-sky",
     summary:
       "Completed Engineering in Electronics and Communications, building the foundation that led into software development and full-stack problem solving.",
     points: [

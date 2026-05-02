@@ -70,15 +70,15 @@ const Hero = () => {
             <h1>I'm Savya Sanchi Sharma.</h1>
 
             <h2 className="hero-role">
-              Software Engineer • Full Stack (React | Next.js | Node.js)
+              SDE II • Full Stack (React | Node.js)
             </h2>
 
             <p className="hero-desc">
-              Software Engineer with 6+ years of hands-on experience building
-              web applications using React, Next.js, Node.js, and GraphQL. I
-              focus on practical engineering trade-offs, scalable product
-              features, and solutions that serve real customer and business
-              needs.
+              Software Development Engineer II with 6+ years of hands-on
+              experience building web applications using React, Next.js,
+              Node.js, and GraphQL. I focus on practical engineering
+              trade-offs, scalable product features, data APIs, and solutions
+              that serve real customer and business needs.
             </p>
 
             <div className="social-row">
