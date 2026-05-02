@@ -10,7 +10,7 @@ const journeyItems = [
   {
     kind: "work",
     year: "2026 - Present",
-    title: "Software Development Engineer II • Full Stack",
+    title: "Software Development Engineer II",
     org: "IQVIA",
     accent: "journey-accent-sky",
     summary:
@@ -26,7 +26,7 @@ const journeyItems = [
   {
     kind: "work",
     year: "2021 - 2026",
-    title: "Senior Consultant • Full Stack",
+    title: "Senior Consultant",
     org: "Aaseya IT Services",
     accent: "journey-accent-yellow",
     summary:
