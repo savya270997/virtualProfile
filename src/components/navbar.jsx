@@ -1,3 +1,5 @@
+import resumePdf from "../assets/SavyaResume.pdf";
+
 const Navbar = () => {
   return (
     <header className="hero-nav navbar-fixed">
@@ -16,9 +18,10 @@ const Navbar = () => {
         </a>
         <a
           className="nav-btn subtle"
-          href="/SavyaSanchi.pdf"
+          href={resumePdf}
           target="_blank"
           rel="noreferrer"
+          download="Savya-Sanchi-Resume.pdf"
         >
           Download CV
         </a>
